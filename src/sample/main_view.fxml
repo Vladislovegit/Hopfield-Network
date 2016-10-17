@@ -1,0 +1,73 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane
+        xmlns:fx="http://javafx.com/fxml" vgap="5" hgap="5">
+    <Text text="First image:"
+          GridPane.rowIndex="0"
+          GridPane.columnIndex="0"/>
+    <TextField fx:id="firstImageTxtField"
+               GridPane.rowIndex="0"
+               GridPane.columnIndex="1"/>
+
+    <Text text="Second image:"
+          GridPane.rowIndex="1"
+          GridPane.columnIndex="0"/>
+    <TextField fx:id="secondImageTxtField"
+               GridPane.rowIndex="1"
+               GridPane.columnIndex="1"/>
+
+    <Text text="Third image:"
+          GridPane.rowIndex="2"
+          GridPane.columnIndex="0"/>
+    <TextField fx:id="thirdImageTxtField"
+               GridPane.rowIndex="2"
+               GridPane.columnIndex="1"/>
+
+    <Button fx:id="teachBtn"
+            text="Teach"
+            GridPane.rowIndex="3"
+            GridPane.columnIndex="0"/>
+    <Text fx:id="teachingStatus"
+          text="Status: "
+          GridPane.rowIndex="3"
+          GridPane.columnIndex="1"/>
+
+    <Text text="Image for recognizing:"
+          GridPane.rowIndex="4"
+          GridPane.columnIndex="0"/>
+    <TextField fx:id="recognizingImageTxtField"
+               GridPane.rowIndex="4"
+               GridPane.columnIndex="1"/>
+
+    <Text text="Percentage of noise:"
+          GridPane.rowIndex="5"
+          GridPane.columnIndex="0"/>
+    <TextField fx:id="noisePercentageTxtField"
+               GridPane.rowIndex="5"
+               GridPane.columnIndex="1"/>
+
+    <Button fx:id="recognizeBtn"
+            text="Recognize"
+            GridPane.rowIndex="6"
+            GridPane.columnIndex="0"
+            disable="true"/>
+    <Text fx:id="recognizingStatus"
+          text="Status: "
+          GridPane.rowIndex="6"
+          GridPane.columnIndex="1"/>
+
+    <Text text="Max percent of noise: "
+          GridPane.rowIndex="7"
+          GridPane.columnIndex="0"/>
+    <Text fx:id="maxNoisePercentage"
+          GridPane.rowIndex="7"
+          GridPane.columnIndex="1"/>
+    <Button fx:id="calculateMaxNoiseBtn"
+            text="Calculate"
+            GridPane.rowIndex="8"
+            GridPane.columnIndex="0"
+            disable="true"/>
+</GridPane>
