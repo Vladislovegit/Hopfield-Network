@@ -33,7 +33,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main_view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../views/main_view.fxml"));
         fxmlLoader.setController(this);
         primaryStage.setTitle("Hopfield Network");
         primaryStage.setScene(new Scene(fxmlLoader.load(), 300, 260));
